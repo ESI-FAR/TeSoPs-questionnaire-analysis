@@ -49,9 +49,11 @@ INCOME_EXTRA_VALUES = [88, 99]  # 88: prefer not to say, 99: don't know
 
 index = [f"participant_{x}" for x in range(NUMBER_OF_PARTICIPANTS)]
 
+
 def get_random_number(value_range, extra_values=[]):
     possible_values = list(value_range) + extra_values
     return random.choice(possible_values)
+
 
 # Timestep 1
 personal_values = [f"pv{x+1}" for x in range(NUMBER_OF_PERSONAL_VALUES)]
@@ -118,8 +120,17 @@ df.to_csv(OUTPUT_FILENAME_TIMESTEP_1)
 pref_temp_t2 = [
     f"temp_pref_{x+1}_t2" for x in range(NUMBER_OF_PREFERRED_TEMPERATURE_SETTINGS)
 ]
-curtailments_t2 = ["empty_t2", "clothes_t2", "night_t2", "away_t2", "shut_t2", "shw_time_t2"]
-heating_motivations_t2 = [f"heat_mot_{x+1}_t2" for x in range(NUMBER_OF_HEATING_MOTIVATIONS)]
+curtailments_t2 = [
+    "empty_t2",
+    "clothes_t2",
+    "night_t2",
+    "away_t2",
+    "shut_t2",
+    "shw_time_t2",
+]
+heating_motivations_t2 = [
+    f"heat_mot_{x+1}_t2" for x in range(NUMBER_OF_HEATING_MOTIVATIONS)
+]
 energy_poverty_t2 = ["bill_diff_t2"]
 policy_support_t2 = ["nl_con_sup_t2", "nl_cap_sup_t2"]
 
@@ -147,11 +158,7 @@ for _ in range(NUMBER_OF_PARTICIPANTS):
     rows_t2.append(row)
 
 columns_t2 = (
-    pref_temp
-    + curtailments
-    + heating_motivations
-    + energy_poverty
-    + policy_support
+    pref_temp + curtailments + heating_motivations + energy_poverty + policy_support
 )
 
 df_t2 = pd.DataFrame(rows_t2, index=index, columns=columns_t2)
