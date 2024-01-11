@@ -158,7 +158,7 @@ for _ in range(NUMBER_OF_PARTICIPANTS):
     rows_t2.append(row)
 
 columns_t2 = (
-    pref_temp + curtailments + heating_motivations + energy_poverty + policy_support
+    pref_temp_t2 + curtailments_t2 + heating_motivations_t2 + energy_poverty_t2 + policy_support_t2
 )
 
 df_t2 = pd.DataFrame(rows_t2, index=index, columns=columns_t2)

@@ -1,4 +1,4 @@
-,temp_pref_1,temp_pref_2,temp_pref_3,temp_pref_4,temp_pref_5,empty,clothes,night,away,shut,shw_time,heat_mot_1,heat_mot_2,heat_mot_3,heat_mot_4,bill_diff,nl_con_sup,nl_cap_sup
+,temp_pref_1_t2,temp_pref_2_t2,temp_pref_3_t2,temp_pref_4_t2,temp_pref_5_t2,empty_t2,clothes_t2,night_t2,away_t2,shut_t2,shw_time_t2,heat_mot_1_t2,heat_mot_2_t2,heat_mot_3_t2,heat_mot_4_t2,bill_diff_t2,nl_con_sup_t2,nl_cap_sup_t2
 participant_0,21,20,28,14,18,88,0,88,9,4,7,6,99,5,0,1,99,4
 participant_1,30,19,15,16,14,10,4,2,5,8,99,0,4,0,4,3,0,4
 participant_2,23,26,11,22,19,4,7,8,5,99,9,10,8,5,4,7,1,8
